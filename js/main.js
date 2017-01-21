@@ -5989,7 +5989,7 @@
                 images.push(img), animData.push(obj)
             }), af.add("parallax", function() {
                 runFrame()
-            }), startScramble("#byline", ["wallet", "shoebox", "glove-box", "handbag", "pocket", "drawer"]), parallaxItems.length > 0 && preload(images).then(function() {
+            }), startScramble("#byline", ["schedule", "events", "prizes"]), parallaxItems.length > 0 && preload(images).then(function() {
                 parallaxItems.each(function(i) {
                     0 == i && (i += 3), setTimeout(function() {
                         $(this).find("img").css({
