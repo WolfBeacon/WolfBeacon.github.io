@@ -3750,7 +3750,7 @@ em {
 .modal__close {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 190px;
     color: transparent;
     width: 24px;
     height: 24px;
@@ -3899,7 +3899,7 @@ em {
     }
     .modal__close {
         top: -10px;
-        right: 20px;
+    right: 190px;
         width: 20px;
         height: 20px
     }
