@@ -1,9 +1,4 @@
-      var auth0 = new Auth0({
-        domain: 'wolf-beacon.auth0.com',
-        clientID: '4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ',
-        redirectURL: 'http://www.eonjohn.com/wolfbeacon',
-        responseType: 'token'
-    });
+
    var options = {
             "icon": "htv_logo-01.png",
              "primaryColor": "#37adcb",
@@ -22,11 +17,16 @@
                 var lock = new Auth0Lock('4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ', 'wolf-beacon.auth0.com', options);
      
  
-lock.show({}, function(err, profile, id_token){
-  if(err){
-    console.log('error logging in', err);
-    return;
-  }
-    $('.website').hide();
-        $('.momentum').show();  
-});
+lock.show( function(err, profile, id_token){
+  if (!err) {
+            console.log('profile',profile);
+            console.log('id_token',profile);
+            console.log('state',state);
+
+            // Save the JWT token.
+            localStorage.setItem('userToken', id_token);
+            $('.website').hide();
+            $('.momentum').show();
+          }
+        });
+
