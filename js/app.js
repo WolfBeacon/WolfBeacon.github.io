@@ -1,4 +1,10 @@
-  var options = {
+      var auth0 = new Auth0({
+        domain: 'wolf-beacon.auth0.com',
+        clientID: '4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ',
+        redirectURL: 'http://www.eonjohn.com/wolfbeacon',
+        responseType: 'token'
+    });
+   var options = {
             "icon": "htv_logo-01.png",
              "primaryColor": "#37adcb",
             "foregroundColor": "#edf5e1",
@@ -13,10 +19,14 @@
             "connections": ["facebook", "twitter"]
         };
 
-                var lock = new Auth0Lock('4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ', 'wolf-beacon.auth0.com', options, {
-     auth: {
-      redirectUrl: 'http://localhost:8080/',
-      responseType: 'code' 
-    }
-  });
-  lock.show();
+                var lock = new Auth0Lock('4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ', 'wolf-beacon.auth0.com', options);
+     
+ 
+lock.show({}, function(err, profile, id_token){
+  if(err){
+    console.log('error logging in', err);
+    return;
+  }
+    $('.website').hide();
+        $('.momentum').show();  
+});
