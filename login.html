@@ -224,13 +224,13 @@ var male="Male";
   }else if ( ef.gender== "m" || "M"){
     $('#gender').val(male);
   }
-})
+});
 </script>
 <script>
 var auth0 = new Auth0({
   domain: 'wolf-beacon.auth0.com',
   clientID: '4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ',
-  callbackURL: 'file:///Users/eojohn/Desktop/WolfBeacon/login.html',
+  callbackURL: 'http://eonjohn.com/wolfbeacon/login.html',
   responseType: 'token'
 });
 var lock = new Auth0Lock('4Yp5JVVkqMjbtN6RuEh09il75ssVNTkQ', 'wolf-beacon.auth0.com', {
