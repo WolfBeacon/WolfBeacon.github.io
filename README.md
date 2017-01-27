@@ -10,3 +10,4 @@ Hackathon promoters should have the incentive to use this app due to free advert
 ## Primary Goal
 Our organization provides a service with no physical products except for a physical server. We are a power-decentralized organization that is growing fast but is still in the early stages of our development.
 
+Check out our site [here](http://wolfbeacon.com/)
