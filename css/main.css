@@ -1149,7 +1149,7 @@ body {
     font-family: "CalibreWeb-Medium";
     line-height: 1;
     color: #292540;
-    background: #37adcb;
+    background: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -1226,7 +1226,8 @@ body {
     width: 100%;
     min-width: 320px;
     min-height: 100%;
-    margin-bottom: -80px
+    margin-bottom: -80px;
+    height: 100%;
 }
 
 .main:after {
