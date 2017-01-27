@@ -1149,7 +1149,7 @@ body {
     font-family: "CalibreWeb-Medium";
     line-height: 1;
     color: #292540;
-    background: #ffffff;
+    background: #37adcb;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -2271,7 +2271,7 @@ em {
 
 .header__container.fixed .header__logo {
     width: 200px;
-    padding-top: 15px
+    padding-top: 7px
 }
 
 @media (max-width: 900px) {
@@ -2307,7 +2307,7 @@ em {
 .header__logo {
     float: left;
     width: 270px;
-    padding-top: 32px
+    padding-top: 15px
 }
 
 .header__logo a {
@@ -7370,7 +7370,7 @@ em {
     display: inline-block;
     font-family: "CalibreWeb-Bold";
     font-size: 2.7rem;
-    margin-right: 20px
+    margin-right: 330px
 }
 
 .homepage-tick-list li:last-child {
@@ -7378,7 +7378,7 @@ em {
 }
 
 .homepage-tick-list li:before {
-    content: "\E907";
+    content: "";
     font-family: "icomoon";
     color: #262dc1;
     padding-right: 10px;
@@ -7426,7 +7426,7 @@ em {
 .homepage-icons__holder svg {
     display: block;
     padding-bottom: 5px;
-    fill: #292540
+    fill: #292540;
 }
 
 .-white .homepage-icons__holder svg {
@@ -7573,7 +7573,11 @@ em {
         display: none
     }
 }
-
+@media (max-width: 740px) {
+    .hack{
+      display: none;
+    }
+}
 @media (max-width: 440px) {
     .home-hero-parallax-container {
         display: none
@@ -7708,7 +7712,7 @@ em {
     display: none
 }
 
-.getting-set-up__item::after {
+/*.getting-set-up__item::after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -7719,13 +7723,14 @@ em {
     height: 2px;
     margin-top: -1px;
     border-top: 1px dashed white
-}
+}*/
 
 .getting-set-up__icon {
     position: relative;
     z-index: 2;
     width: 120px;
     height: 120px;
+    margin: 0 auto;
     margin-bottom: 35px
 }
 
