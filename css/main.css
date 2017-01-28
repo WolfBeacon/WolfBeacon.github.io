@@ -1150,6 +1150,7 @@ body {
     line-height: 1;
     color: #292540;
     background: #fff;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
