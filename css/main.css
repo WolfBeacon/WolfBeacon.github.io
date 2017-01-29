@@ -1664,6 +1664,32 @@ em {
     will-change: transform;
     transition: transform 200ms ease-out
 }
+.button1 {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fd654d;
+    width: auto;
+    min-width: 100px;
+    font-family: "CalibreWeb-Bold";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: not-allowed;
+    border-radius: 3rem;
+    outline: none;
+    background: #FFA042;
+    box-shadow: 0 2.5px 0 0 rgba(87, 84, 103, 0.4);
+    padding: 16px 30px;
+    margin-top: 2rem;
+    overflow: hidden;
+    z-index: 1;
+    transform: scale(0.94) perspective(0.94px);
+    will-change: transform;
+    transition: transform 200ms ease-out
+}
 
  
 
