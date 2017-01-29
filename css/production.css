@@ -6125,9 +6125,7 @@ button.btn {
         padding: 0!important;
         float: none
     }
-    .ethos_tiles .col .tile {
-        min-height: auto
-    }
+
     .ethos_tiles .col .tile.alt {
         background: #f0f0f0;
     }
@@ -6559,7 +6557,7 @@ button.btn {
     }
     .overlay_nav .inner,
     body {
-        padding-bottom: 60px
+        /*padding-bottom: 60px*/
     }
     .mobile_bar {
         display: block
