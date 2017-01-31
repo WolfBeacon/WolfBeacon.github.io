@@ -1503,6 +1503,20 @@ p.-subtext {
     color: #97969f !important
 }
 
+.gsoc p {
+  text-align: justify !important;
+  font-size: 125% !important;
+  color: #2d2d2d !important;
+  margin: 0 0 20px 0;
+}
+
+.gsoc li{
+  margin: 0 0 10px 0;
+  text-align: justify !important;
+  font-size: 112% !important;
+  color: #2d2d2d !important
+}
+
 a {
     color: #fd654d;
     text-decoration: none
