@@ -41,9 +41,40 @@
         width: 150px;
         border-radius: 10rem;
     }
+    
+    .gsoc {
+        font-family: "CalibreWeb-Regular" !important;
+        width: 84%;
+    }
 
+    @media(max-width:768px) {
+        .gsoc {
+            width: 100%;
+        }
+    }
+    
+    .gsoc h1,
+    .gsoc h2,
+    .gsoc h3,
+    .gsoc h5 {
+        font-family: "RemoPro-SemiBold";
+    }
+    
+    .gsoc p {
+        font-size: 122% !important;
+        color: #2d2d2d !important;
+        margin: 0 0 20px 0;
+    }
+    
+    .gsoc li {
+        margin: 0 0 10px 0;
+        font-size: 112% !important;
+        color: #2d2d2d !important
+    }
+    
     @media(min-width:768px) {
-        p, li {
+        p,
+        li {
             text-align: justify !important;
             text-justify: inter-word !important;
         }
@@ -68,7 +99,7 @@
                         <li><a class="nav__link is-home-link" href="index.html" title="Home">Home</a></li>
                         <li><a class="nav__link is-features-link" href="features.html" title="Features">Features</a></li>
                         <li><a class="nav__link is-how-it-works-link" href="how-it-works.html" title="How it works">How it works</a></li>
-                       <!--  <li><a class="nav__link is-how-it-works-link" href="projects.html" title="Projects">Projects</a></li> -->
+                        <!--  <li><a class="nav__link is-how-it-works-link" href="projects.html" title="Projects">Projects</a></li> -->
                         <li><a class="nav__link is-faq-link" href="https://github.com/WolfBeacon" title="Contribute to our github">Contribute</a></li>
                         <li><a class="nav__link is-faq-link " href="login.html" title="Sign In">Sign In</a></li>
                         <li><a class="button -fill -trial-button" href="login.html" b title="Sign Up for FREE">Sign Up for free</a></li>
@@ -90,14 +121,16 @@
                 </div>
         </header>
         <div class="panel   -space-top-2 -space-bottom-1 getting-set-up-panel">
-            <div class="container -medium ">
-                <h2 style="text-align: center;" class="-title-1">GSoC 2017 @ WolfBeacon</h2>
+            <div class="container -medium gsoc">
+                <h1 style="text-align: center; color: #2d2d2d;" class="-title-1">GSoC 2017 @ WolfBeacon</h1>
             </div>
         </div>
-        <div class="container gsoc" style="width: 84%">
+        <div class="container gsoc">
+            <h5 id="attemp"> &#8227; WolfBeacon will be applying for Google Summer of Code 2017 as a participating organization.</h2>
+        	<br><br>
             <h2 id="whatexactlyisgsoc"><u>What Exactly is GSoC?</u></h2>
             <br>
-            <p>TLDR; it's where you spend your summer writing code for awesome open source projects sponsored by Google, making $$$$ and rep along the way. </p>
+            <p><b>tl;dr</b>: <i>It's this program where you spend your summer writing code for awesome open source projects sponsored by Google while making some $$$$ and rep along the way.</i></p>
             <p><a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> is a global program focused on introducing students to open source software development. Students work on a 3 month programming project with an open source organization during their break from university. Since its inception in 2005, the program has brought together almost 11,000 student participants and 10,000 mentors from over 113 countries worldwide. Google Summer of Code has produced over 50 million lines of code for 515 open source organizations.</p>
             <p>As a part of Google Summer of Code, student participants are paired with a mentor from the participating organizations, gaining exposure to real-world software development and techniques. Students have the opportunity to spend the break between their school semesters earning a <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">stipend</a> while working in areas related to their interests.</p>
             <p>In turn, the participating organizations are able to identify and bring in new developers who implement new features and hopefully continue to contribute to open source even after the program is over. Most importantly, more code is created and released for the use and benefit of all.</p>
@@ -143,12 +176,13 @@
             <div class="container">
                 <ul style=" list-style-type: disc;">
                     <li>We have a <em>enviable</em> set of sponsors. They've been gracious enough to offer us their otherwise paid services so we've got access to bleeding edge technologies like powerful bare-metal infrastructure for hosting by <a href="https://cycle.io">Cycle.io</a>, state of the art authentication infrastructure by <a href="https://auth0.com">Auth0</a> and loads more!</li>
-                    <li>Sponsored Opportunities to attend the best Hackathons across the planet <em>#hype</em></li>
-                    <li>AWS credits, Free domains, Stickers and all the good stuff. <em>#awwwwyeah!</em></li>
-                    <li>Excellent networking opportunities with our talented community and team members. We've got folks who are open source ninjas, ex-GSoCers and work or have interned at enviable places.</li>
+                    <li>Sponsored Opportunities to attend the best Hackathons across the planet.</li>
+                    <li>AWS credits, Free domains, Stickers and all the good stuff.</li>
+                    <li>Excellent networking opportunities with our talented community and team members. We've got folks who are experienced open source developers, ex-GSoCers and work or have interned at enviable places.</li>
                 </ul>
             </div>
             <br>
+            <p>Pretty cool right? <em>#hype!</em></p>
             <br>
             <h3 id="howtoapply">How to Apply</h3>
             <p>The basic process would be:</p>
@@ -156,8 +190,8 @@
                 <ol>
                     <li>1. Introduce yourself  and present a short abstract of your ideas for the project in the <a href="#disqus_thread">Disqus section</a> at the bottom of this page</li>
                     <li>2. Feel free to join the <i>#wolfbeacon </i> freenode IRC channel where you can discuss ideas with mentors, community members and other folks.</li>
-                    <li>3. Start formalising the requirements, get specific and spec out a great proposal on <a href="https://docs.google.com/document/u/0/?usp=mkt_docs">Google Docs.</a></li>
-                    <li>4. Paste a link to proposal in the Disqus section with comments/feedback enabled on your doc so you can get feedback. </li>
+                    <li>3. Start formalising the requirements, get specific and spec out a great proposal on <a href="https://docs.google.com/document/u/0/?usp=mkt_docs" target="_blank">Google Docs</a>.</li>
+                    <li>4. Paste a shared link to your proposal in the Disqus section with comments enabled you can receive feedback from others. </li>
                 </ol>
             </div>
             <br>
@@ -173,8 +207,8 @@
             <h3 id="1wolfbeaconanalyticsproject">1. WolfBeacon Analytics Project</h3>
             <p>The main objective of this project is to build a WolfBeacon's Analytics Platform. An integral part of every system in 2017 is the data you can extract from it and manipulate it so that you will be able to provide a better experience for everyone.</p>
             <p>WolfBeacon's Analytics Platform will allow Hackathon Organizers to reach deeper into the interactions and reviews of workshops/ events and the Hackathon itself. With a modern and clean UI paired with UX design strategies, the Analytics Platform will revolutionize the way Hackathons are organized and how feedback is responded to within the coming years. </p>
-            <p>We're looking for talented and passionate Front-end developers who will take a mock-up into a full functioning application with their development skills.</p>
-            <p><em>Skillset</em>:  The usual - <i>HTML/CSS/JavaScript/jQuery</i>. Experience with <a href="https://facebook.github.io/react/">React.js</a> or <a href="https://angularjs.org/">Angular.js</a>. As a good UI/UX/Frontend developer, we expect you to come up with wireframes and prototypes, in turn translating them into code. Some basic understanding of Analytics/Data Science is a plus but not a requirement.</p>
+            <p>We're looking for talented and passionate Front-end developers who will take a mock-up into a fully functioning application with their development skills.</p>
+            <p><em>Skillset</em>:  The usual - <i>HTML/CSS/JavaScript/jQuery</i> is implicit. Experience with <a href="https://facebook.github.io/react/">React.js</a> or <a href="https://angularjs.org/">Angular.js</a> is mandatory. As a good UI/UX/Frontend developer, we expect you to come up with wireframes and prototypes while turning them into code.<br>Some basic understanding of Analytics/Data Science is a plus but not a requirement.</p>
             <p><b>Mentors:</b> <a href="https://www.linkedin.com/in/avikantz">Avikant</a> &amp; <a href="https://www.linkedin.com/in/nairakshay">Akshay</a></p>
             <p><b>Admin:</b> <a href="https://www.linkedin.com/in/ralphmaamari">Ralph Maamari</a></p>
             <p>
@@ -184,7 +218,7 @@
             <p>The WolfBeacon Server forms the Backend and API which is utilised by all the apps . We've also built the world's first API that shows you all the Hackathons around the planet in ascending order of their radial distance on simply entering your coordinates. Well, that's just one of the things that makes the backend so cool.</p>
             <p>The challenge is to apply solid software engineering principles and continue work on building a robust, scalable Backend. Initial challenges would involve shifting to the new Auth0 API implementation and using v1 of the their Spring Security toolkit library, implementing a CI/CD pipeline integrating the Cycle API which would enable faster deployments to production and including featured Hackathons endpoints, User Hackathons endpoints and profiles with the help of user data from Auth0.</p>
             <p><em>Skillset</em>: JAVA (highly proficient), <a href="https://projects.spring.io/spring-boot/">Spring-Boot</a>, <a href="http://hibernate.org/">Hibernate</a>, <a href="https://www.docker.com/">Docker</a>, familiarity with <a href="https://auth0.com">Auth0</a> and <a href="https://cycle.io">Cycle</a></p>
-            <p><b>Mentors:</b> <a href="https://github.com/users/TheOriginalAlex" target="_blank">Alex Johnson</a></p>
+            <p><b>Mentors:</b> <a href="https://github.com/TheOriginalAlex" target="_blank">Alex Johnson</a></p>
             <p><b>Admin:</b> <a href="https://www.linkedin.com/in/ralphmaamari">Ralph Maamari</a> </p>
             <p><b>Note:</b> The Backend project makes for a rather challenging and demanding task since familiarity/experience with the current codebase and all the relevant technologies is a must. We're on a tight deadline and since all the apps are dependent on the Backend, it's imperative that we get tested code into deployment ASAP. With that being said, we're looking forward to proposals from developers with solid as well as relevant experience and/or those who have already been contributing to WolfBeacon.</p>
             <br>
@@ -193,10 +227,11 @@
             <br>
             <br>
             <h2 id="contact"><u>Contact</u></h2>
-            <p>As far as GSoC specifics go, we'd like to have your ideas and proposal links on our Disqus section as we mentioned earlier. This would help aggregate the ideas and keep a log of FAQs.</p>
-            <p>Feel free to join the <code><b>#wolfbeacon</b></code> IRC channel on <a href="https://webchat.freenode.net">irc.freenode.net</a> to exchange ideas with members and other potential students. We're internally on Slack but our IRC and Slack channels are synced via <a href="https://github.com/bholagabbar/irackbot" target="_blank">irackbot</a> so all communication between them is two-way, realtime and public.
+            <br>
+            <p>As far as general questions and GSoC specifics go, we'd like to have your ideas and proposal links on our Disqus section just like we mentioned earlier. This would help aggregate the ideas and keep a log of FAQs.</p>
+            <p>Feel free to join the <code><b>#wolfbeacon</b></code> IRC channel on <a href="https://webchat.freenode.net">irc.freenode.net</a> to exchange ideas with members and other potential students. We use Slack internally but our IRC and Slack channels are synced via <a href="https://github.com/bholagabbar/irackbot" target="_blank">irackbot</a> so all communication between is are two-way, realtime and public.
             </p>
-            <p>If you have suggestions/questions/specific queries which cannot be answered in public, feel free to email us at <a href="mailto:hello@wolfbeacon.com">hello@wolfbeacon.com</a></p>
+            <p>If you have any other suggestions/questions/specific queries, shoot us a mail at <a href="mailto:hello@wolfbeacon.com">hello@wolfbeacon.com</a> and we'll be happy to get in touch.</p>
             <br>
             <br>
             <br>
