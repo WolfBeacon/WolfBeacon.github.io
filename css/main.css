@@ -1549,6 +1549,15 @@ p.-subtext {
     color: #97969f !important
 }
 
+.gsoc h1, 
+.gsoc h2,
+.gsoc h3 {
+    font-family: "RemoPro-SemiBold";
+}
+
+.gsoc {
+    font-family: "CalibreWeb-Regular" !important;
+}
 
 .gsoc p {
     font-size: 122% !important;
