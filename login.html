@@ -70,7 +70,7 @@
     </fieldset>
     
     <fieldset class="form-fieldset ui-input __fourth">
-      <input type="number" id="phone" />
+      <input type="text" id="phone" />
       <label for="phone">
         <span data-text="Phone Number">Phone Number</span>
       </label>
@@ -215,15 +215,17 @@ $(".set").fadeIn();
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
-var gender= $('#gender:first');
-var female="Female";
-var male="Male";
- $( "#gender" ).keypress(function() {
-  if (gender=== "f" || "F") {
-     $('#gender').val(female);
-  }else if ( ef.gender== "m" || "M"){
-    $('#gender').val(male);
-  }
+  var female="Female";
+  var male="Male";
+  $( "#gender" ).on("keyup", function(e) {
+    var gender= e.target.value;
+    console.log(gender);
+    if (gender=== "f" || gender==="F") {
+       e.target.value = female;
+    }else if ( gender== "m" || gender==="M"){
+       e.target.value = male;
+    }
+  });
 });
 </script>
 <script>
